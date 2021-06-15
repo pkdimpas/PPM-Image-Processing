@@ -57,7 +57,7 @@ Example 3: ppmx -gray -fh image-data.ppm
 ![ocean pgm](https://user-images.githubusercontent.com/28287818/122008221-5d39a680-cdeb-11eb-8e9f-26744a58209f.png)
 
 ### PS
- This program was written when I was still a fresh graduate (2018). There are a lot of things that needs to be changed like proper names of variables, ineffecient code, fix potential bugs, etc. I don't have plans to update the source code since it is already a bit unreadable to me 😅. This will just be my reference and see how much I improve since I started my career.
+ This program was written when I was still a fresh graduate (2018). There are a lot of things that needs to be changed like proper naming of variables, ineffecient code, fix potential bugs, etc. I don't have plans to update the source code since it is already a bit unreadable to me 😅. This will just be my reference and see how much I improve since I started my career.
 
 # References
 PPM: http://netpbm.sourceforge.net/doc/ppm.html (color image format)
