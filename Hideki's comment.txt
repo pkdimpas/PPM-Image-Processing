@@ -1,0 +1,50 @@
+Philogene,
+
+Your code is very well written. It's simple and easy to read/understand. I think your code is one of the most beautiful code for this contest. Good work.
+
+Not only implementing minimum image operations, you also added additional technics like interpolation and dithering. This is great.
+
+Unfortunately, your bilinear interpolation does not work due to a careless bug. You should have caught this when you test scaling functions. Anyway, please find the bug and fix it by yourself. If you cannot find it, please let me know and I will tell you.
+
+Error checking and handling is good except for no error checking on fwrite() function. This is a minus point.
+
+Handling optional parameter can be more simple and optimized although your code has no issues.
+
+
+Implement a rotation code with separate code for orthogonal rotations is a big plus! However, from the performance stand point, it's better to create rotate180() and rotate270() instead of reusing flip functions. Reducing the number of image operation path is important for the performance than reusing some existing functions.
+
+Dithering works fine. I wonder why you choose bigger bayer pattern. There's pros and cons for both patterns but smaller matrix pattern can express more details. I hope you compared and decided to use bigger pattern table. One note for dithering is that you may want to adjust a little bit so that whilte background area becomes totally white after the dithering. Currently most of the people who choose ordered dither ended up some scattered dot pattern even for complete white area.
+
+You used minimum macros and I like that. However, the function round() would be better to convert to macro since it's called three times for each pixel for rotation. 
+
+Below is your scaling code. This is OK but you should optimize this.
+
+--Before--
+    for(i = 0; i < headerInfo[1]; i++ ){
+        for(j=0; j < headerInfo[0]; j++){
+
+            x = xRatio * j;
+            y = yRatio * i;
+            xDiff = (xRatio * j) - x;
+            yDiff = (yRatio * i) - y;
+
+            index = (y * width + x);
+
+--After--
+    for(i = 0; i < headerInfo[1]; i++ ){
+        y = yRatio * i;
+        yDiff = (yRatio * i) - y;
+        for(j=0; j < headerInfo[0]; j++){
+
+            x = xRatio * j;
+            xDiff = (xRatio * j) - x;
+
+            index = (y * width + x);
+
+As you see above, there's no need to calculate y and yDiff inside of the width loop because the variable "i" value will not be changed. 
+Same thing can be said for your rotation code. You can move the calculation of 'y' to outside of width loop for the performance reason. 
+
+
+Anyway, all in all, I think you've done an excellent coding. It was a big and pleasant surprise for me. Keep up your good coding!!
+
+But never forget that "There's always a place you can improve your code". If you satisfy what you write, then you will loose chances to improve your programing skill. 
