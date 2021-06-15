@@ -1,5 +1,5 @@
 # PPM Image Data Processing
-This program is about manipuling an image in PPM format.
+This console-based program is about manipuling an image in PPM format.
 The format is simple and straightforward and if you want to practice bitwise manipulation  this is a good environment.
 
 To give you a glimpse on how a "plain" PPM Format, this is how it looks like.
@@ -14,7 +14,7 @@ P3 # P3 is a magic number
 15  0 15    0  0  0    0  0  0    0  0  0
 ```
 
-This program though accepts only raw PPM format (P6 is the magic number).
+This program though only accepts raw PPM format (P6 is the magic number).
 If you want to see the the document of PPM, you can visit [here](http://netpbm.sourceforge.net/doc/ppm.html)
 ## How to use
 
@@ -42,7 +42,7 @@ If don't trust my .exe file (you should be!), you can copy my code and compile i
 5. -mono: Convert to Bilevel (.pbm) format
 6. -gray: Convert to grayscale (.pgm) format
 
-Commands can be specified in any order but no duplication of commands.
+Commands can be specified in any order but no duplication is allowed.
 
 
 (Images below are in PNG format since Github doesn't support PPM. This is just for showing the output)
