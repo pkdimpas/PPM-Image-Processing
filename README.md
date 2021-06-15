@@ -1,6 +1,6 @@
 # PPM Image Data Processing
 This console-based program is about manipuling an image in PPM format.
-The format is simple and straightforward and if you want to practice bitwise manipulation  this is a good environment.
+The format is simple and straightforward and if you want to practice bitwise manipulation  this is a good project to try.
 
 To give you a glimpse on how a "plain" PPM Format, this is how it looks like.
 ```
@@ -18,7 +18,7 @@ This program though only accepts raw PPM format (P6 is the magic number).
 If you want to see the the document of PPM, you can visit [here](http://netpbm.sourceforge.net/doc/ppm.html)
 ## How to use
 
-To use the program. you can start by running ppmx.exe
+To use the program, you can start by running ppmx.exe. This will give you format and commands that you could try.
 ```
 $ ./ppmx
 
@@ -57,7 +57,7 @@ Example 3: ppmx -gray -fh test-data.ppm
 ![ocean pgm](https://user-images.githubusercontent.com/28287818/122008221-5d39a680-cdeb-11eb-8e9f-26744a58209f.png)
 
 ### PS
- This program was written when I was still a fresh graduate (2018). There are a lot of things that needs to be changed like proper naming of variables, ineffecient code, fix potential bugs, etc. I don't have plans to update the source code since it is already a bit unreadable to me 😅. This will just be my reference and see how much I improve since I started my career.
+ This program was written when I was still a fresh graduate (2018). There are a lot of things that needs to be changed like proper naming of variables, ineffecient code, fix potential bugs, etc. I don't have a plan to update the source code since it is already a bit unreadable to me 😅. This will be my reference and see how much I improved since I started my career.
 
 # References
 PPM: http://netpbm.sourceforge.net/doc/ppm.html (color image format)
