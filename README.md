@@ -47,13 +47,13 @@ Commands can be specified in any order but no duplication of commands.
 
 (Images below are in PNG format since Github doesn't support PPM. This is just for showing the output)
 
-Example 1: ppmx  -w1080 -mono image-data.ppm
+Example 1: ppmx  -w1080 -mono test-data.ppm
 ![ocean pbm](https://user-images.githubusercontent.com/28287818/122006755-cb7d6980-cde9-11eb-88f8-5924ceed7c9d.png)
 
-Example 2: ppmx -fv -r45 -w720 image-data.ppm
+Example 2: ppmx -fv -r45 -w720 test-data.ppm
 ![ocean ppm](https://user-images.githubusercontent.com/28287818/122007662-c371f980-cdea-11eb-9eee-e9fdcf3221da.png)
 
-Example 3: ppmx -gray -fh image-data.ppm
+Example 3: ppmx -gray -fh test-data.ppm
 ![ocean pgm](https://user-images.githubusercontent.com/28287818/122008221-5d39a680-cdeb-11eb-8e9f-26744a58209f.png)
 
 ### PS
